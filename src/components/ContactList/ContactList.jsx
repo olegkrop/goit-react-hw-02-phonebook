@@ -7,9 +7,9 @@ export function ContactList({ contacts, deleteContact }) {
     <ul className={style.list}>
       {contacts.map(({ name, number, id }) => {
         return (
-          <li key={id} className={style.contacts__item}>
-            <span className={style.item__name}>{name}:</span>
-            <span className={style.item__number}>{number}</span>
+          <li key={id}>
+            <span>{name}:</span>
+            <span>{number}</span>
             <button
               type="button"
               className={style.button}
