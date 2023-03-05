@@ -83,7 +83,10 @@ class App extends Component {
             </div>
           </>
         ) : (
-          'No contacts'
+          <>
+            <Filter value={this.state.filter} onChange={this.changeFilter} />
+            <p className={style.label}>No contacts</p>
+          </>
         )}
       </div>
     );
